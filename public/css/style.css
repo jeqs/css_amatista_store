@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&family=Poppins:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: #b07a8e;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  background-color: #9c4fdf;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 28px;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #cc32f7;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    margin-bottom: 80px;
+  }
+}
+.hero__content {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .hero__content {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__content {
+    width: 50%;
+  }
+}
+.hero__content h1 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+.hero__content h1 span {
+  color: #5c1f58;
+}
+.hero__description {
+  margin-bottom: 20px;
+  color: #403c39;
+  font-weight: 400;
+  font-size: 18px;
+  max-width: 100%;
+}
+.hero__search {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.hero__search input {
+  flex: 1;
+  background-color: rgba(208, 208, 210, 0.25);
+  padding: 10px 20px;
+  border: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 15px;
+  display: inline-block;
+}
+.hero__search input::placeholder {
+  color: #949494;
+  font-weight: 500;
+}
+.hero__search button {
+  background-color: #5c1f58;
+  display: inline-block;
+  width: 40px;
+  border: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.hero__search button img {
+  width: 20px;
+}
+.hero__img {
+  text-align: center;
+}
+.hero__img img {
+  max-width: 80%;
+}
+@media (min-width: 768px) {
+  .hero__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__container {
+    max-width: 90%;
+  }
+}
+
+.categories {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .categories {
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .categories .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .categories .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 30px;
+  }
+}
+.categories__item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 15px 10px 10px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.categories__item__img {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 10px;
+  top: -30px;
+}
+.categories__item-title {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin-top: 8px;
+}
+.categories__item-description {
+  color: #403c39;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-main__menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  padding: 16px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

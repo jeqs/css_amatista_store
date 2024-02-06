@@ -1,0 +1,15 @@
+{
+  "name": "css_amatista_store",
+  "version": "1.0.0",
+  "description": "Amatista Store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Jose Quispe",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

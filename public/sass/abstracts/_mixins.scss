@@ -1,0 +1,45 @@
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin reset-list() {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+@mixin button($bg-color: $color-amethyst, $color: $color-white) {
+  display: inline-block;
+  background-color: $bg-color;
+  color: $color;
+  padding: 10px 20px;
+  border-radius: 28px;
+  text-decoration: none;
+  &:hover {
+    background-color: $color-phiox;
+  }
+}

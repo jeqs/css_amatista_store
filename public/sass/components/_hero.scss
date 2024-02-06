@@ -1,0 +1,87 @@
+.hero {
+  @include breakpoint(tablethorizontal) {
+    margin-bottom: 80px;
+  }
+
+  &__content {
+    width: 100%;
+    @include breakpoint(tablet) {
+      width: 80%;
+    }
+    @include breakpoint(tablethorizontal) {
+      width: 50%;
+    }
+
+    h1 {
+      font-family: $font-title;
+      color: $color-black;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 50px;
+
+      span {
+        color: $color-palatine;
+      }
+    }
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    color: $color-grey;
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  &__search {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 20px;
+    input {
+      flex: 1;
+      background-color: $color-grey-soft;
+      padding: 10px 20px;
+      border: 0;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      font-size: 15px;
+      display: inline-block;
+
+      &::placeholder {
+        color: $color-grey-love;
+        font-weight: 500;
+      }
+    }
+
+    button {
+      background-color: $color-palatine;
+      display: inline-block;
+      width: 40px;
+      border: 0;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  &__img {
+    text-align: center;
+    img {
+      max-width: 80%;
+    }
+  }
+
+  // Tablet
+  &__container {
+    @include breakpoint(tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include breakpoint(desktop) {
+      max-width: 90%;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.header-main__menu {
+  ul {
+    @include reset-list();
+  }
+}
